@@ -26,9 +26,9 @@
         </ul>
     </nav>
 
-    <section class="grid-section js-scroll" id="animais">
+    <section class="grid-section"  data-anima="scroll" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class=" animais-lista js-tabmenu">
+        <ul class=" animais-lista" data-tab="menu">
             <li><img src='assets/imagem1.jpg'></li>
             <li><img src='assets/imagem2.jpg'></li>
             <li><img src='assets/imagem3.jpg'></li>
@@ -36,7 +36,7 @@
             <li><img src='assets/imagem5.jpg'></li>
             <li><img src='assets/imagem6.jpg'></li>
         </ul>
-        <div class="animais-descricao animais js-tabcontent">
+        <div class="animais-descricao animais" data-tab="content">
             <section>
                 <h2 class="titulo">Raposa</h2>
                 <p>As raposas são animais mamíferos e onívoros pertencentes à família
@@ -109,9 +109,9 @@
             </section>
         </div>
     </section>
-    <section class="grid-section faq js-scroll" id="faq">
+    <section class="grid-section faq"  data-anima="scroll" id="faq">
         <h1 class="titulo">FAQ</h1>
-        <dl class="faq-lista js-accordion">
+        <dl class="faq-lista" data-anima="accordion">
             <dt>Qual a idade dos animais?</dt>
             <dd>As raposas são animais mamíferos e onívoros pertencentes à família
                 Canidae. São vulpídeos de porte médio, caracterizados por um focinho
@@ -128,7 +128,7 @@
                 semelhantes às pupilas verticais dos felídeos.</dd>
         </dl>
     </section>
-    <section class="grid-section contato js-scroll" id="contato">
+    <section class="grid-section contato" data-anima="scroll" id="contato">
         <h1 class="titulo">Contato</h1>
         <div class="mapa">
             <img src="assets/mapa.png">
@@ -143,7 +143,8 @@
     <footer class="copy">
         <p> Todos os direitos reservados</p>
     </footer>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="module" src="js/script.js"></script>
+    
 
 </body>
 

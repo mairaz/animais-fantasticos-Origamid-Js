@@ -1,5 +1,4 @@
 const links = document.querySelectorAll('a[href^="#"]')
-console.log(links)
 
 links.forEach((link)=>{
     link.addEventListener('click', ativar)
@@ -8,10 +7,10 @@ links.forEach((link)=>{
 function ativar(e){
     e.preventDefault();
     links.forEach((link)=>{
-        link.classList.remove('ativo');
-        e.target.classList.add('ativo')
-     
+        link.classList.remove('ativo'); // remove a classe de todos elementos da lista
+       
     })
+    e.target.classList.add('ativo');     
 }
 
 const all = document.body.querySelectorAll('body *')

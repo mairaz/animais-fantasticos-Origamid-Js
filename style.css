@@ -190,10 +190,10 @@ body{
         margin-bottom:0px;
     }
 }
-.js .js-tabcontent section{
+[data-tab="content"] section{
     display:none
 }
-.js-tabcontent section.ativo{
+[data-tab="content"] section.ativo{
    display:block !important;
    animation:show .5s forwards;
 }
@@ -209,18 +209,18 @@ body{
     }
 }
 
-.js .js-accordion dd{
+[data-anima="accordion"] dd{
     display:none
 }
-.js .js-accordion dd.ativo{
+[data-anima="accordion"] dd.ativo{
     display:block;
     animation: showAccordion .5s forwards;
 }
-.js .js-accordion dt::after{
+[data-anima="accordion"] dt::after{
     content:'⮧';
     margin-left:20px;
 }
-.js .js-accordion dt.ativo::after{
+[data-anima="accordion"] dt.ativo::after{
     content:'⮥';
    
 }
@@ -236,11 +236,11 @@ body{
     }
 }
 
-.js-scroll{
+[data-anima=scroll]{
     opacity:0;
     transform:translate3d(-30px, 0,0);
 }
-.js-scroll.ativo{
+[data-anima="scroll"].ativo{
     opacity:1;
     transform:translate3d(30px, 0,0);
     transition:0.5s
